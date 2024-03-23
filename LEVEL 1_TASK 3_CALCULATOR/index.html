@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/index.js"></script>
+</head>
+<body>
+    <main class="main" id="main">
+        <div class="calci">
+            <div class="screen">
+                <input type="text" class="display" readonly>
+        </div>    
+            <div class="num">
+
+                <div class="row1 row"><div class="col">
+                
+                <button class="cols" onclick="clear1()"><span>C</span></button>
+                <button class="cols" onclick="del()"><span>del</span></button>
+                <button class="cols" onclick="show(event)" value="%">%</button>
+                <button class="cols" onclick="show(event)" value="/">/</button>
+
+            </div>
+        </div>
+
+             <div class="row2 row"><div class="col">
+
+                <button class="cols" onclick="show(event)" value="7">7</button>
+                <button class="cols" onclick="show(event)" value="8">8</button>
+                <button class="cols" onclick="show(event)" value="9">9</button>
+                <button class="cols" onclick="show(event)" value="*">X</button>
+
+                </div>
+            </div>
+
+                <div class="row3 row"><div class="col">
+
+                <button class="cols" onclick="show(event)" value="4" >4</button>
+                <button class="cols" onclick="show(event)" value="5">5</button>
+                <button class="cols" onclick="show(event)" value="6">6</button>
+                <button class="cols" onclick="show(event)" value="-">-</button>
+                </div>
+            </div>
+
+                <div class="row4 row"><div class="col">
+
+                <button class="cols" onclick="show(event)" value="1">1</button>
+                <button class="cols" onclick="show(event)" value="2">2</button>
+                <button class="cols" onclick="show(event)" value="3">3</button>
+                <button class="cols" onclick="show(event)" value="+">+</button>
+                </div>
+            </div>
+
+                <div class="row5 row"><div class="col">
+
+                <button class="cols" onclick="show(event)" value="3.14">pi</button>
+                <button class="cols" onclick="show(event)" value="0">0</button>
+                <button class="cols" onclick="show(event)" value=".">.</button>
+                <button class="cols" onclick="calc()">=</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </main>
+</body>
+</html>

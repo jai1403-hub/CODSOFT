@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+:root{
+    --first-color:rgb(166, 218, 243);
+    --second-color:rgb(19, 180, 208);
+    --font-color:white;
+}
+
+:root{
+    --font-family:"Madimi One", sans-serif;
+    --font-size:2rem;
+    --font-weight:bolder;
+}
+*{
+    font-family: var(--font-family);
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+.main{
+    height:90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calci{
+    width: 25rem;
+    height: 30rem;
+    border-radius: 30px;
+    background-color: var(--first-color);
+    display: grid ;
+    grid-template-rows: 1fr 2fr;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px  rgb(107, 107, 107);
+}
+span{
+    color: rgb(175, 15, 15);
+}
+.display{
+    width: 23rem;
+    height: 3rem;
+    background: color var(--first-color);
+    border-radius: 30px;
+    text-align: end;
+    border:none;
+    padding-right: 20px;
+    font-size: 2.5rem;
+    color: rgb(4, 70, 70);
+    box-shadow: inset -5px -5px 12px rgb(0, 0,0,.16),
+                inset 5px 5px 12px rgb(0, 0,0,.16);
+                
+}
+.screen{
+    width:25rem;
+    height:5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.num{
+    position: relative;
+    left: 1rem;
+    width: 23rem;
+    height: 25rem;
+    display: grid;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+.row
+{
+    width: 23rem;
+    height: 5rem;
+}
+.col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.cols{
+    width: 4rem;
+    height:4rem ;
+    background-color:var(--second-color);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size:30px;
+    box-shadow:  2px 2px 2px 2px rgba(3, 71, 86, 0.649);
+    font-weight: var(--font-weight);
+}
+button{
+    border: none;
+}
